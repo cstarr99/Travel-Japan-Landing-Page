@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+body {
+  margin: 0;
+  background: url(images/jpn6.webp);
+}
+
+/* Header */
+header {
+  background-color: white;
+  width: 100vw;
+  height: 13vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-img {
+  height: 100%;
+}
+
+.menu-icons {
+  margin-left: 200px;
+}
+
+.menu-list > li,
+.login-list > li {
+  display: inline;
+}
+
+.menu-list > li > a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding-right: 20px;
+  color: black;
+}
+
+.menu-list > li > a:hover {
+  color: red;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.login-list {
+  margin-left: 70px;
+}
+
+.top-button {
+  border-radius: 1000px;
+  margin-right: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  color: white;
+  background-color: red;
+}
+
+.top-button:hover {
+  filter: brightness(75%);
+  transform: scale(1.1);
+}
+
+/* Main */
+
+.main-text {
+  color: black;
+  font-weight: bold;
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.sub-text {
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: -20px;
+  margin-bottom: 55px;
+}
+
+.bottom-buttons {
+  margin-left: 500px;
+}
+
+.bottom-button {
+  border-radius: 1000px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  color: white;
+  background-color: red;
+  margin-right: 20px;
+}
+
+.bottom-button:hover {
+  filter: brightness(75%);
+  transform: scale(1.1);
+}
