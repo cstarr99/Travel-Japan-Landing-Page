@@ -1,0 +1,100 @@
+:root {
+  --main-color1: rgb(96, 238, 238);
+  --main-color2: rgb(38, 160, 160);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--main-color1);
+  font-family: Roboto;
+}
+
+.login-container {
+  background-color: white;
+  height: 60vh;
+  width: 30vw;
+  margin: 150px auto;
+  border-radius: 3%;
+}
+
+.login-top {
+  background-color: var(--main-color2);
+  height: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3%;
+}
+
+.login-main {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.form-title {
+  text-align: center;
+  color: white;
+}
+
+.logo {
+  background: var(--main-color2);
+  display: inline;
+  width: 37px;
+  height: 37px;
+  border-radius: 2%;
+  margin-bottom: -14px;
+  border: 1px solid grey;
+  border-right: none;
+}
+
+a {
+  color: var(--main-color2);
+  text-decoration: none;
+}
+
+a:hover {
+  filter: brightness(75%);
+}
+
+.info-container {
+  width: 350px;
+  margin-bottom: 15px;
+}
+
+.inputs {
+  margin-top: 15px;
+}
+
+.input-item {
+  width: 300px;
+  height: 37px;
+  margin-left: -3px;
+  display: inline;
+  border: 1px solid grey;
+  border-left: none;
+}
+
+.submit {
+  width: 80%;
+  height: 37px;
+  background-color: var(--main-color2);
+  color: white;
+  font-size: 1.2rem;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.submit:hover {
+  filter: brightness(75%);
+}
+
+.not-member {
+  margin-left: 50px;
+}
