@@ -4,6 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="SignUp.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h1>Sign Up!</h1>
+      <form class="form">
+        <div class="info-container">
+          <input id="name" class="input-item" type="text" placeholder="Name" />
+        </div>
+        <div class="info-container">
+          <input
+            id="email"
+            class="input-item"
+            type="email"
+            placeholder="Email"
+          />
+        </div>
+        <div class="info-container">
+          <input
+            id="password"
+            class="input-item"
+            type="password"
+            placeholder="Password"
+          />
+        </div>
+        <div class="info-container">
+          <input
+            id="confirm-password"
+            class="input-item"
+            type="password"
+            placeholder="Confirm Password"
+          />
+        </div>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </body>
 </html>

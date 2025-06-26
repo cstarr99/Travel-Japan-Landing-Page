@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  height: 70vh;
+  width: 40vw;
+  margin: 150px auto;
+  border-radius: 3%;
+  background-color: aqua;
+}
