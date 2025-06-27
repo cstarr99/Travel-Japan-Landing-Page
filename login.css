@@ -1,5 +1,4 @@
 :root {
-  --main-color1: rgb(96, 238, 238);
   --main-color2: rgb(206, 19, 19);
 }
 
@@ -85,6 +84,7 @@ a:hover {
   padding-bottom: 7px;
   margin-top: 15px;
   margin-bottom: 15px;
+  margin-left: 10px;
 }
 .submit:hover {
   filter: brightness(75%);

@@ -1,5 +1,4 @@
 :root {
-  --main-color1: rgb(96, 238, 238);
   --main-color2: rgb(206, 19, 19);
 }
 
@@ -14,8 +13,8 @@ body {
 }
 
 .container {
-  height: 70vh;
-  width: 40vw;
+  height: 63vh;
+  width: 33vw;
   margin: 150px auto;
   border-radius: 3%;
   background-color: white;
@@ -52,4 +51,45 @@ body {
   margin-bottom: -14px;
   border: 1px solid grey;
   border-right: none;
+}
+
+.input-item {
+  width: 300px;
+  height: 37px;
+  margin-left: -3px;
+  display: inline;
+  border: 1px solid grey;
+  border-left: none;
+}
+
+.inputs {
+  margin-left: 13px;
+}
+
+.submit {
+  height: 37px;
+  font-size: 1.2rem;
+  padding-top: 7px;
+  padding-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 7px;
+  margin-left: 15px;
+}
+.submit:hover {
+  filter: brightness(75%);
+}
+
+#signup-btn {
+  width: 80%;
+  height: 35px;
+  background-color: var(--main-color2);
+  color: white;
+  display: block;
+  padding-bottom: 20px;
+}
+
+.second-btn {
+  width: 38%;
+  color: var(--main-color2);
+  background-color: aliceblue;
 }
