@@ -1,9 +1,16 @@
+:root {
+  --main-color1: rgb(96, 238, 238);
+  --main-color2: rgb(206, 19, 19);
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  background: url(images/castle.jpg) center;
+  font-family: Roboto;
 }
 
 .container {
@@ -11,5 +18,38 @@ body {
   width: 40vw;
   margin: 150px auto;
   border-radius: 3%;
-  background-color: aqua;
+  background-color: white;
+}
+.login-top {
+  background-color: var(--main-color2);
+  height: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3%;
+}
+
+.form-title {
+  color: white;
+}
+
+.login-main {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.info-container {
+  width: 350px;
+  margin-bottom: 15px;
+}
+
+.logo {
+  background: var(--main-color2);
+  display: inline;
+  width: 37px;
+  height: 37px;
+  border-radius: 2%;
+  margin-bottom: -14px;
+  border: 1px solid grey;
+  border-right: none;
 }

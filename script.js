@@ -1,5 +1,6 @@
-const loginButton = document.querySelector("#login");
-const joinButton = document.querySelector("#Join");
+const loginButton = document.querySelector("#login-btn");
+const joinButton = document.querySelector("#signup-btn");
+const homePageButton = document.querySelector("#homepage-btn");
 
 loginButton.addEventListener("click", () => {
   window.location.href = "login.html";
@@ -7,4 +8,8 @@ loginButton.addEventListener("click", () => {
 
 joinButton.addEventListener("click", () => {
   window.location.href = "SignUp.html";
+});
+
+homePageButton.addEventListener("click", () => {
+  window.location.href = "LandingPage.html";
 });

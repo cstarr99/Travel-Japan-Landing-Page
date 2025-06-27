@@ -1,6 +1,6 @@
 :root {
   --main-color1: rgb(96, 238, 238);
-  --main-color2: rgb(38, 160, 160);
+  --main-color2: rgb(206, 19, 19);
 }
 
 * {
@@ -9,7 +9,7 @@
 
 body {
   margin: 0;
-  background-color: var(--main-color1);
+  background: url(images/jap.jpeg) center;
   font-family: Roboto;
 }
 
@@ -79,20 +79,28 @@ a:hover {
 }
 
 .submit {
-  width: 80%;
   height: 37px;
-  background-color: var(--main-color2);
-  color: white;
   font-size: 1.2rem;
   padding-top: 7px;
   padding-bottom: 7px;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+.submit:hover {
+  filter: brightness(75%);
+}
+
+#login-btn {
+  width: 80%;
+  background-color: var(--main-color2);
+  color: white;
   display: block;
 }
 
-.submit:hover {
-  filter: brightness(75%);
+.second-btn {
+  width: 40%;
+  color: var(--main-color2);
+  background-color: aliceblue;
 }
 
 .not-member {
