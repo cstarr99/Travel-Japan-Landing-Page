@@ -6,6 +6,7 @@
     <title>Login Page</title>
     <link rel="stylesheet" href="login.css" />
     <script defer src="script.js"></script>
+    <script defer src="login.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,40 +15,48 @@
     />
   </head>
   <body>
-    <div class="login-container">
-      <div class="login-top">
-        <h1 class="form-title">Login Form</h1>
+    <form id="login-form" action="logincomplete.html">
+      <div class="error">
+        <h3 class="error-title">Error</h3>
+        <ul class="errors-list"></ul>
       </div>
-      <div class="login-main">
-        <div class="inputs">
-          <div class="info-container">
-            <img src="images/user.svg" class="logo" />
-            <input
-              id="email"
-              type="email"
-              placeholder="Email"
-              class="input-item"
-            />
-          </div>
-          <div class="info-container">
-            <img src="images/lock.svg" class="logo" />
-            <input
-              id="password"
-              type="password"
-              placeholder="Password"
-              class="input-item"
-            />
-          </div>
+      <div class="login-container">
+        <div class="login-top">
+          <h1 class="form-title">Login Form</h1>
         </div>
-        <span class="forgot-password"><a href="">Forgot Password?</a></span>
-        <button type="submit" id="login-btn" class="submit">Login</button>
-        <button type="submit" id="signup-btn" class="submit second-btn">
-          Sign Up
-        </button>
-        <button type="submit" id="homepage-btn" class="submit second-btn">
-          Home Page
-        </button>
+        <div class="login-main">
+          <div class="inputs">
+            <div class="info-container">
+              <img src="images/user.svg" class="logo" />
+              <input
+                id="email"
+                type="email"
+                placeholder="Email"
+                class="input-item"
+                autocomplete="on"
+              />
+            </div>
+            <div class="info-container">
+              <img src="images/lock.svg" class="logo" />
+              <input
+                id="password"
+                type="password"
+                placeholder="Password"
+                class="input-item"
+                autocomplete="on"
+              />
+            </div>
+          </div>
+          <span class="forgot-password"><a href="">Forgot Password?</a></span>
+          <button type="submit" id="login-btn" class="submit">Login</button>
+          <!-- <button type="submit" id="signup-btn" class="submit second-btn">
+            Sign Up
+          </button>
+          <button type="submit" id="homepage-btn" class="submit second-btn">
+            Home Page
+          </button> -->
+        </div>
       </div>
-    </div>
+    </form>
   </body>
 </html>

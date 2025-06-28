@@ -95,6 +95,7 @@ a:hover {
   background-color: var(--main-color2);
   color: white;
   display: block;
+  margin-left: 15px;
 }
 
 .second-btn {
@@ -105,4 +106,12 @@ a:hover {
 
 .not-member {
   margin-left: 50px;
+}
+
+.error {
+  display: none;
+}
+
+.error.show {
+  display: block;
 }
