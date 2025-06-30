@@ -3,9 +3,9 @@ const loginEmail = document.querySelector("#email");
 const loginPassword = document.querySelector("#password");
 const loginError = document.querySelector(".error");
 const loginErrorList = document.querySelector(".errors-list");
-const errorMessages = [];
 
 loginForm.addEventListener("submit", (e) => {
+  const errorMessages = [];
   clearErrors();
   if (loginEmail.value === "") {
     errorMessages.push("Please enter an email.");
@@ -32,7 +32,8 @@ function printErrors(errorMessages) {
 
 function clearErrors() {
   while (loginErrorList.children[0] != undefined || null) {
-    loginErrorList.remove(loginErrorList.children[0]);
+    console.log(loginErrorList.children[0]);
+    loginErrorList.removeChild(loginErrorList.children[0]);
   }
   loginError.classList.remove("show");
 }
