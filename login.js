@@ -6,21 +6,33 @@ const loginErrorList = document.querySelector(".errors-list");
 const errorMessages = [];
 
 loginForm.addEventListener("submit", (e) => {
-  e.preventDefault();
+  clearErrors();
   if (loginEmail.value === "") {
+    errorMessages.push("Please enter an email.");
+  }
+
+  if (loginPassword.value === "") {
+    errorMessages.push("Please enter a password.");
+  }
+  if (errorMessages.length !== 0) {
     e.preventDefault();
-    printErrors("Please enter an email.");
-  } else if (loginPassword.value === "") {
-    e.preventDefault();
-    printErrors("Please enter a password.");
-  } else {
-    window.location.href = "logincomplete.html";
+    printErrors(errorMessages);
   }
 });
 
-function printErrors(message) {
-  const li = document.createElement("li");
-  li.innerText = message;
-  loginErrorList.appendChild("li");
+function printErrors(errorMessages) {
+  errorMessages.forEach((error) => {
+    const li = document.createElement("li");
+    li.innerText = error;
+    loginErrorList.appendChild(li);
+  });
+
   loginError.classList.add("show");
+}
+
+function clearErrors() {
+  while (loginErrorList.children[0] != undefined || null) {
+    loginErrorList.remove(loginErrorList.children[0]);
+  }
+  loginError.classList.remove("show");
 }
