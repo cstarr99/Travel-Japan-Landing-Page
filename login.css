@@ -98,12 +98,6 @@ a:hover {
   margin-left: 15px;
 }
 
-.second-btn {
-  width: 40%;
-  color: var(--main-color2);
-  background-color: aliceblue;
-}
-
 .not-member {
   margin-left: 50px;
 }
@@ -114,4 +108,7 @@ a:hover {
 
 .error.show {
   display: block;
+}
+
+#signup-btn {
 }

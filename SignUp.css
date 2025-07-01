@@ -93,3 +93,11 @@ body {
   color: var(--main-color2);
   background-color: aliceblue;
 }
+
+.error {
+  display: none;
+}
+
+.error.show {
+  display: block;
+}

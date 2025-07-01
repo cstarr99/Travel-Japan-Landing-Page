@@ -11,8 +11,8 @@ loginForm.addEventListener("submit", (e) => {
     errorMessages.push("Please enter an email.");
   }
 
-  if (loginPassword.value === "") {
-    errorMessages.push("Please enter a password.");
+  if (loginPassword.value < 6) {
+    errorMessages.push("Password needs to be greater than 6 characters.");
   }
   if (errorMessages.length !== 0) {
     e.preventDefault();
