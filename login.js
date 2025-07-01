@@ -12,7 +12,7 @@ loginForm.addEventListener("submit", (e) => {
   }
 
   if (loginPassword.value < 6) {
-    errorMessages.push("Password needs to be greater than 6 characters.");
+    errorMessages.push("Password needs to be more than 6 characters.");
   }
   if (errorMessages.length !== 0) {
     e.preventDefault();
