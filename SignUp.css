@@ -86,12 +86,25 @@ body {
   color: white;
   display: block;
   padding-bottom: 20px;
+  margin-right: 2rem;
+}
+
+#login-btn {
+  margin-left: 4rem;
+  margin-right: 5rem;
 }
 
 .second-btn {
-  width: 38%;
+  font-size: 1.3em;
+}
+
+a {
   color: var(--main-color2);
-  background-color: aliceblue;
+  text-decoration: none;
+}
+
+.second-btn:hover {
+  filter: brightness(75%);
 }
 
 .error {
@@ -100,4 +113,22 @@ body {
 
 .error.show {
   display: block;
+}
+
+.error-title {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.errors-list {
+  margin: 0;
+  padding-left: 15px;
+}
+
+.error {
+  background-color: hsl(0, 100%, 80%);
+  border-radius: 0.5rem;
+  padding: 10px;
+  color: hsl(0, 50%, 20%);
+  margin-bottom: 1rem;
 }
