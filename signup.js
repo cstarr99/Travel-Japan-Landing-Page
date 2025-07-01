@@ -6,6 +6,7 @@ const passwordConfirmation = document.querySelector("#confirm-password1");
 const signupErrorsList = document.querySelector(".errors-list");
 const errors = document.querySelector(".error");
 
+//form that when submitted checks to make sure each input meets the below parameters, and if it meets it will submit or else it will not submit and show errors.
 signupForm.addEventListener("submit", (e) => {
   const errorMessages = [];
   clearErrors();
@@ -27,6 +28,7 @@ signupForm.addEventListener("submit", (e) => {
   }
 });
 
+//function that clears previous errors when called.
 function clearErrors() {
   while (signupErrorsList.children[0] != undefined || null) {
     signupErrorsList.removeChild(signupErrorsList.children[0]);
@@ -34,6 +36,7 @@ function clearErrors() {
   errors.classList.remove("show");
 }
 
+//function that prints all errors that are present in the given array by making a li and adding it to existing list.
 function printErrors(errorMessages) {
   errorMessages.forEach((error) => {
     const li = document.createElement("li");
